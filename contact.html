@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <style>
+       .form {
+        width: 24%;
+        margin: 0 30px;
+        padding: 20px;
+        border: 1px solid #000000;
+        background-color: #f9f9f9;
+      }
+
+      .form .head {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      input, select, textarea {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+
+      .buttom {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button[type="reset"] {
+        background-color: #f44336;
+      }
+
+      button:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <a href="./index.html">Home</a> |
+      <a href="./education.html">Education</a> |
+      <a href="./work.html">Work</a> | 
+      <a href="#">Contact</a> |
+    </div>
+    <hr />
+
+    <h1>Contact Me</h1>
+
+    <div class="form">
+      <form action="#">
+        <div class="head">Enter your info..</div>
+        Your Name
+        <input type="text" placeholder="ชื่อจริง-นามสกุล" required autofocus />
+
+        <div class="email">
+          E-mail
+          <input type="email" placeholder="E-mail ของคุณ" required autofocus />
+        </div>
+
+        <div>
+          <label for="gender">Gender</label>
+          <select id="gender-a">
+            <option value="ชาย">ชาย</option>
+            <option value="หญิง">หญิง</option>
+            <option value="ไม่ระบุ">ไม่ระบุ</option>
+          </select>
+        </div>
+
+        <div>
+          <textarea name="message" rows="10" cols="30"></textarea>
+        </div>
+
+        <div class="buttom">
+          <button type="submit">Send</button>
+          <button type="reset">Clear</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
